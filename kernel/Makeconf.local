@@ -36,4 +36,4 @@ PLATFORM=pc99
 SCHED=rr
 
 BUILDDIR = $(CURDIR)
-SRCDIR=/home/l4ka/ws/pistachio/kernel
+SRCDIR=$(BUILDDIR)/../l4ka/kernel
