@@ -5,6 +5,13 @@ user/configure
 user/config.h.in
 *.o
 *~
-\#*\#
+\#*#
+\#*
 .depend
 .log
+.version
+*-kernel
+include/*
+config/
+!config/.config
+
