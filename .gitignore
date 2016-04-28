@@ -6,3 +6,5 @@ user/config.h.in
 *.o
 *~
 \#*\#
+.depend
+.log
