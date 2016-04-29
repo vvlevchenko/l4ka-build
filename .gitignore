@@ -15,4 +15,6 @@ kernel/include/*
 kernel/config/
 !kernel/config/.config
 !kernel/config/config.h
-
+user/config.h
+user/config.log
+user/config.status
