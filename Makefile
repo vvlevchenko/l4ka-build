@@ -1,3 +1,6 @@
+#
+# Recomended to launch with LC_ALL=C
+#
 all: kernel user
 
 kernel:
