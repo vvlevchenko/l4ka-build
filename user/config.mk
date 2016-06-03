@@ -48,10 +48,11 @@ SHELL=		/bin/bash
 CC=		gcc
 CXX=		$(CC) -x c++
 AS=		$(CC)
+GCCINC=		$(shell $(CC) -print-file-name=include)
 CFLAGS=		-nostdinc -g -O2 -m32
 CXXFLAGS=	$(CFLAGS) -fno-exceptions
-LDFLAGS=	-N -L$(top_builddir)/lib -L/usr/lib/gcc/x86_64-linux-gnu/5 -nostdlib  -melf_i386
-CPPFLAGS=	-I$(top_srcdir)/include -I$(top_builddir) -I/usr/lib/gcc/x86_64-linux-gnu/5/include 
+LDFLAGS=	-N -L$(top_builddir)/lib -L$(GCCINC)/../ -nostdlib  -melf_i386
+CPPFLAGS=	-I$(top_srcdir)/include -I$(top_builddir) -I$(GCCINC)
 LGCC=		$(shell $(CC) --print-libgcc-file-name)
 
 TOOLPREFIX=	
